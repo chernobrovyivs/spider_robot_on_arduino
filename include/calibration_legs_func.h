@@ -6,7 +6,7 @@ Servo servo[4][3];
 //define servos' ports
 const int servo_pin[4][3] = { {11, 12, 13}, {2, 4, 7}, {14, 15, 16},{8, 9, 10} };
 
-void setup()
+void init_calibration_leg_func()
 {
   //initialize all servos
   for (int i = 0; i < 4; i++)
@@ -19,7 +19,7 @@ void setup()
   }
 }
 
-void loop(void)
+void calibration_legs_func(void)
 {
   for (int i = 0; i < 4; i++)
   {
